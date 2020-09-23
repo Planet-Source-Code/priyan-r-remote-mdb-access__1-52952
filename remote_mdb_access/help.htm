@@ -1,0 +1,275 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<p align="center"><b><font color="#0000FF">Priyan's Remote MDB Acces </font>
+<font color="#008000">]Help File]</font></b></p>
+<p align="left"><font face="Verdana" size="2" color="#000080"><b>This Active-X 
+Control allows you to access your MS-Access file on your webserver.you only need 
+to put the serverside script on the root of the&nbsp; webserver which you want 
+to access the file<br>
+Open the testproject that shows all the use this Control</b></font></p>
+<p align="left"><b><font face="Verdana" size="2" color="#000080">If you Found 
+this code useful
+<a href="http://unni.europe.webmatrixhosting.net/pscredirect/redir.aspx?appid=Remote MDB">
+Vote For ME</a></font></b><br>
+<font color="#000080"><b>Visit me at <a target="_blank" href="http://priyan.tk">http://priyan.tk</a></b></font><br>
+<b><font color="#000080">Mail me at</font>
+<a href="mailto:vb@priyan.tk?subject=Remote MDB">vb@priyan.tk</a></b></p>
+<hr>
+<p align="left"><u><b><font face="Verdana" size="4" color="#800080">Properties</font></b></u><b><font face="Verdana" size="4" color="#800080">(6)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></b></p>
+<div align="center" style="width: 749; height: 42">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber1">
+    <tr>
+      <td width="100%" colspan="2">1. <b>Dbpassword</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>&nbsp;If your access file is 
+      password protected set this poperty</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center" style="width: 748; height: 80">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber2">
+    <tr>
+      <td width="100%" colspan="2">2. <b>Fieldcount</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>Returns the number of fields in 
+      query result<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      eg: If you execute this query select name,phone from tablename <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      The field count will be 2</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="84%" id="AutoNumber3">
+    <tr>
+      <td width="100%" colspan="2">3. <b>Mdbfile</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>The path of the MS-Access File on 
+      ther server<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eg: if your file is at yourserver/database/file.mdb 
+      and the server script is at<br>
+      yourver/sript.asp then set database/file.mdb</b> </font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber4">
+    <tr>
+      <td width="100%" colspan="2">4 <b>Recordcount</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><b><font color="#000080">The count of the records returned 
+      by your sql query</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber5">
+    <tr>
+      <td width="100%" colspan="2">5. <b>Recordstofetch</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><b><font color="#000080">The number of records to download 
+      from the access file by default it is 100</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber6">
+    <tr>
+      <td width="100%" colspan="2">6. <b>Scripturl</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><b><font color="#000080">The server script url.I provided 
+      two sctipts asp and asp.net you can put one or both in the webserver</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p><u><b><font face="Verdana" size="4" color="#800080">Methods/Functions</font></b></u><b><font face="Verdana" size="4" color="#800080">(7)&nbsp;&nbsp;&nbsp;
+</font></b></p>
+<div align="center" style="width: 749; height: 163">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber7">
+    <tr>
+      <td width="100%" colspan="2">1. <b>Executequery</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><b><font color="#000080">You need to to call this method 
+      to access all other mehods<br>
+&nbsp;&nbsp; syntax: </font><font color="#000080">executequery(byval sql as 
+      string,optional pos as long)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sql: the sql query 
+      to execute <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pos: the start 
+      position of record to download<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (optional bydefault 
+      executequery</font> <font color="#000080">returns</font>
+      <font color="#000080">records from the record position 1)</font></b> <b>
+      <font color="#000080">eg: if your sql query returns 4 records and you set 
+      pos to 2 then it gives the records from 2 to 4</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center" style="width: 748; height: 80">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber8" height="38">
+    <tr>
+      <td width="100%" colspan="2" height="19">2. <b>Addnew</b></td>
+    </tr>
+    <tr>
+      <td width="14%" height="19">&nbsp;</td>
+      <td width="86%" height="19"><font color="#000080"><b>You can use this to 
+      add new record. Syntax: Addnew(byval values as string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you need pass the values to add.Seperate fileds 
+      by |~|<br>
+&nbsp;&nbsp;&nbsp;&nbsp; eg:addnew(&quot;field1=value|~|field2=value|~|field3=value)</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="84%" id="AutoNumber9">
+    <tr>
+      <td width="100%" colspan="2">3. <b>Update</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>you can use this to update a&nbsp; 
+      record. Syntax: update(ByVal pos as long, values as string)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pass value pos to the according position of the 
+      record to update<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you need pass the values to add.Seperate fileds 
+      by |~|<br>
+&nbsp;&nbsp;&nbsp;&nbsp; eg:addnew(&quot;field1=value|~|field2=value|~|field3=value)</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber10">
+    <tr>
+      <td width="100%" colspan="2"><b>4. Delete</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>Use this function to delete a 
+      record synatx: delete(ByVal pos as long)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; pass value pos to the according position of the record 
+      to Delete</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber11" height="38">
+    <tr>
+      <td width="100%" colspan="2" height="19">5. <b>Getfield</b></td>
+    </tr>
+    <tr>
+      <td width="14%" height="19">&nbsp;</td>
+      <td width="86%" height="19"><font color="#000080"><b>Use this function to 
+      get the field name syntax:getfield(byval index as long)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; returns the 
+      fieldname use field count prperty to count the available fields<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; eg: select name,phone 
+      from tablename<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+      here field( 1) will return will give the field name 'name' and field(2) 
+      will give 'phone ' </b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber12">
+    <tr>
+      <td width="100%" colspan="2">6. <b>Getrow</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><font color="#000080"><b>use this function to read a row 
+      of record.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Syntax:getrow()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Each field will be 
+      seperated by a |$| <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; value1|$|value2|$|value3</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber13">
+    <tr>
+      <td width="100%" colspan="2">6. <b>Cancel</b></td>
+    </tr>
+    <tr>
+      <td width="14%">&nbsp;</td>
+      <td width="86%"><b><font color="#000080">Cancels the current execution</font></b></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p><u><b><font face="Verdana" size="4" color="#800080">Events</font></b></u><b><font face="Verdana" size="4" color="#800080">(1)
+</font></b></p>
+<div align="center">
+  <center>
+  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="83%" id="AutoNumber14" height="44">
+    <tr>
+      <td width="100%" colspan="2" height="19">6. <b>Status(ByVal status As 
+      String)</b></td>
+    </tr>
+    <tr>
+      <td width="14%" height="25">&nbsp;</td>
+      <td width="86%" height="25"><font color="#000080"><b>Status&nbsp; gives 
+      the current status description</b></font></td>
+    </tr>
+  </table>
+  </center>
+</div>
+<p>
+
+   <font SIZE="2" color="#800000">
+    ©Priyan R 2003&nbsp; http://www.priyan.tk</font></p>
+
+</body>
+
+</html>
